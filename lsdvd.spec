@@ -1,12 +1,12 @@
 Summary:	List dvd's content
 Summary(pl):	Pokazywanie zawarto¶ci dvd
 Name:		lsdvd
-Version:	0.6
+Version:	0.9
 Release:	1
 License:	GPL
 Group:		Applications/File
+# Source0-md5:	658a25de7bd6626e701489a60ef978d3
 Source0:	http://dl.sourceforge.net/acidrip/%{name}-%{version}.tar.gz
-# Source0-md5:	0cd9963ab59121b926455bfc1a46e42a
 URL:		http://acidrip.thirtythreeandathird.net/lsdvd.html
 BuildRequires:	libdvdread-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc AUTHORS README NEWS
 %attr(755,root,root) %{_bindir}/*
