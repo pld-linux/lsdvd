@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/File
 Source0:	http://dl.sourceforge.net/acidrip/%{name}-%{version}.tar.gz
+# Source0-md5:	0cd9963ab59121b926455bfc1a46e42a
 URL:		http://acidrip.thirtythreeandathird.net/lsdvd.html
 BuildRequires:	libdvdread-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
