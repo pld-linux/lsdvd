@@ -2,7 +2,7 @@ Summary:	list dvd's content
 Summary(pl):	pokazuje zawarto¶æ dvd
 Name:		lsdvd
 Version:	0.6
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/File
 Source0:	http://prdownloads.sourceforge.net/acidrip/%{name}-%{version}.tar.gz
@@ -12,7 +12,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 
+Lsdvd allows to check the contents of the DVD as well as information about
+particular tracks such as audio and subtitle languages etc. Priceless when
+you want to play or rip video which is somewhere among the dozens of
+useless promotional/trailer tracks.
+
 %description -l pl
+
+Lsdvd pozwala na sprawdzenie zawarto¶ci DVD oraz podaje informacje na temat
+poszczególnych ¶cie¿ek, takie jak ilo¶æ i rodzaje ¶cie¿ek audio czy napisów
+itd. Nieoceniony w sytuacji kiedy chcesz odtwarzaæ/przekodowaæ film, który
+jest gdzie¶ g³êboko ukryty po¶ród dziesi±tek bezu¿ytecznych ¶cie¿ek
+z czo³ówkami i trailerami.
 
 %prep
 %setup -q
