@@ -8,6 +8,8 @@ Group:		Applications/File
 # Source0-md5:	658a25de7bd6626e701489a60ef978d3
 Source0:	http://dl.sourceforge.net/acidrip/%{name}-%{version}.tar.gz
 URL:		http://acidrip.thirtythreeandathird.net/lsdvd.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libdvdread-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,7 +41,8 @@ rm -f missing
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
