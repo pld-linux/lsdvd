@@ -1,12 +1,13 @@
 Summary:	List dvd's content
 Summary(pl):	Pokazywanie zawarto¶ci dvd
 Name:		lsdvd
-Version:	0.15
+Version:	0.16
 Release:	1
 License:	GPL
 Group:		Applications/File
 Source0:	http://dl.sourceforge.net/acidrip/%{name}-%{version}.tar.gz
-# Source0-md5:	5ea6a942804cfc7911e7a0efe4819c7a
+# Source0-md5:	0dbb395f73aeec4b08d8997d07df287b
+Patch0:		%{name}-stdint.patch
 URL:		http://untrepid.com/acidrip/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -28,9 +29,9 @@ bezu¿ytecznych ¶cie¿ek z czo³ówkami i trailerami.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
@@ -39,7 +40,6 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -49,5 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS README NEWS
-%attr(755,root,root) %{_bindir}/*
+%doc AUTHORS ChangeLog NEWS README
+%attr(755,root,root) %{_bindir}/lsdvd
+%{_mandir}/man1/lsdvd.1*
