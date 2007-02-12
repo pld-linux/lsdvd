@@ -1,5 +1,5 @@
 Summary:	List dvd's content
-Summary(pl):	Pokazywanie zawarto∂ci dvd
+Summary(pl.UTF-8):   Pokazywanie zawarto≈õci dvd
 Name:		lsdvd
 Version:	0.16
 Release:	1
@@ -20,12 +20,12 @@ about particular tracks such as audio and subtitle languages etc.
 Priceless when you want to play or rip video which is somewhere among
 the dozens of useless promotional/trailer tracks.
 
-%description -l pl
-Lsdvd pozwala na sprawdzenie zawarto∂ci DVD oraz podaje informacje na
-temat poszczegÛlnych ∂cieøek, takie jak ilo∂Ê i rodzaje ∂cieøek audio
-czy napisÛw itd. Nieoceniony w sytuacji kiedy chcemy odtwarzaÊ lub
-przekodowaÊ film, ktÛry jest gdzie∂ g≥Íboko ukryty po∂rÛd dziesi±tek
-bezuøytecznych ∂cieøek z czo≥Ûwkami i trailerami.
+%description -l pl.UTF-8
+Lsdvd pozwala na sprawdzenie zawarto≈õci DVD oraz podaje informacje na
+temat poszczeg√≥lnych ≈õcie≈ºek, takie jak ilo≈õƒá i rodzaje ≈õcie≈ºek audio
+czy napis√≥w itd. Nieoceniony w sytuacji kiedy chcemy odtwarzaƒá lub
+przekodowaƒá film, kt√≥ry jest gdzie≈õ g≈Çƒôboko ukryty po≈õr√≥d dziesiƒÖtek
+bezu≈ºytecznych ≈õcie≈ºek z czo≈Ç√≥wkami i trailerami.
 
 %prep
 %setup -q
