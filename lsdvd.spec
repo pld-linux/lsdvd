@@ -1,5 +1,5 @@
 Summary:	List dvd's content
-Summary(pl.UTF-8):   Pokazywanie zawartości dvd
+Summary(pl.UTF-8):	Pokazywanie zawartości dvd
 Name:		lsdvd
 Version:	0.16
 Release:	1
