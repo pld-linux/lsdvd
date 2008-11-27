@@ -2,7 +2,7 @@ Summary:	List dvd's content
 Summary(pl.UTF-8):	Pokazywanie zawartości dvd
 Name:		lsdvd
 Version:	0.16
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/File
 Source0:	http://dl.sourceforge.net/acidrip/%{name}-%{version}.tar.gz
