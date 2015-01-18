@@ -5,7 +5,7 @@ Version:	0.16
 Release:	3
 License:	GPL
 Group:		Applications/File
-Source0:	http://dl.sourceforge.net/acidrip/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/acidrip/%{name}-%{version}.tar.gz
 # Source0-md5:	0dbb395f73aeec4b08d8997d07df287b
 Patch0:		%{name}-stdint.patch
 URL:		http://untrepid.com/acidrip/
