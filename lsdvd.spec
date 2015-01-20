@@ -2,7 +2,7 @@ Summary:	List dvd's content
 Summary(pl.UTF-8):	Pokazywanie zawartości dvd
 Name:		lsdvd
 Version:	0.17
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/File
 Source0:	http://downloads.sourceforge.net/lsdvd/%{name}-%{version}.tar.gz
