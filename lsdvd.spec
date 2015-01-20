@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/File
 Source0:	http://downloads.sourceforge.net/lsdvd/%{name}-%{version}.tar.gz
 # Source0-md5:	32e63ff932ee2867e023ad3e74e14dcb
-URL:		http://untrepid.com/acidrip/
+URL:		http://lsdvd.sourceforge.net
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libdvdread-devel
