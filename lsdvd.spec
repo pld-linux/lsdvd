@@ -1,5 +1,5 @@
-Summary:	List dvd's content
-Summary(pl.UTF-8):	Pokazywanie zawartości dvd
+Summary:	List DVD's content
+Summary(pl.UTF-8):	Pokazywanie zawartości DVD
 Name:		lsdvd
 Version:	0.17
 Release:	1
@@ -8,9 +8,11 @@ Group:		Applications/File
 Source0:	http://downloads.sourceforge.net/lsdvd/%{name}-%{version}.tar.gz
 # Source0-md5:	32e63ff932ee2867e023ad3e74e14dcb
 URL:		http://lsdvd.sourceforge.net
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
-BuildRequires:	libdvdread-devel
+BuildRequires:	libdvdread-devel >= 4.1.3
+BuildRequires:	pkgconfig
+Requires:	libdvdread >= 4.1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -21,10 +23,10 @@ the dozens of useless promotional/trailer tracks.
 
 %description -l pl.UTF-8
 Lsdvd pozwala na sprawdzenie zawartości DVD oraz podaje informacje na
-temat poszczególnych ścieżek, takie jak ilość i rodzaje ścieżek audio
-czy napisów itd. Nieoceniony w sytuacji kiedy chcemy odtwarzać lub
-przekodować film, który jest gdzieś głęboko ukryty pośród dziesiątek
-bezużytecznych ścieżek z czołówkami i trailerami.
+temat poszczególnych ścieżek, takie jak liczba i rodzaje ścieżek audio
+czy napisów itd. Jest nieoceniony w sytuacji, kiedy chcemy odtwarzać
+lub przekodować film, który jest gdzieś głęboko ukryty pośród
+dziesiątek bezużytecznych ścieżek z czołówkami i trailerami.
 
 %prep
 %setup -q
